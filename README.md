@@ -6,6 +6,7 @@ Instructions to run the editor:
   2. Open the cloned directory in the terminal and type
   `code()`   
   g++ ./src/*.cpp -g  -I ../include -o ../bin/editor
+  `code()`
   
   (alternatively you can run the compiled file in the bin folder if you are comfortable running an executable)
   3. Type `code()` ./bin/editor to run editor
