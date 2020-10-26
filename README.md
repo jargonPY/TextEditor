@@ -1,3 +1,4 @@
+#Text Editor
 A text editor similar in style to the vi editor (albeit not as many features).
 Instructions to run the editor:
   1. Clone the repo
