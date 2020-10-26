@@ -4,6 +4,6 @@ Instructions to run the editor:
   2. Compile and link all files in the src folder (alternatively you can run the compiled file in the bin folder if you are comfortable running an executable)
   3. Run the executable
  
- P.S.
+ P.S.\n
  https://viewsourcecode.org/snaptoken/kilo helped me understand the terminal library (termios) and the VT100 escape sequences.
 
