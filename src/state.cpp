@@ -194,12 +194,15 @@ void State::escape()
 
 /* Methods for editing text */
 
-void State::newLine()
+void State::newLine(bool readFile)
 {
-    int loc;
-    charLoc(loc);
-
-    _row.bufAppend("\r\n", 2, loc);
+    if (!readFile) {
+        int loc;
+        charLoc(loc);
+        _row.bufAppend("\r\n", 2, loc);
+    } else {
+        _row.bufAppend("\r\n", 2);
+    }
     _cy += 1;
     _cx = 0;
     _numrows++;
@@ -334,7 +337,7 @@ void State::openFile(char *filename)
         while (std::getline(file, line))
         {
             _row.bufOpenFile(&line);
-            newLine();
+            newLine(true);
         }
         file.close();
     } else die("Failed to open file");
