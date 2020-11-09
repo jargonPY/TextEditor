@@ -7,6 +7,6 @@ Instructions to run the editor:
   3. Once compiled type -- `./bin/editor` -- to run editor
   4. Enjoy!
  
- Credits: <br />
+
  Credits to https://viewsourcecode.org/snaptoken/kilo for helping me understand the terminal library (termios) and the VT100 escape sequences.
 
